@@ -1,0 +1,94 @@
+<div class="d-flex flex-column row-gap-2 py-2">
+  {{ loginDate | date : "short" }}
+
+  <div class="container">
+    <h1>Contact Management Application</h1>
+
+    <p class="text-justify">
+      Customers and prospects are the lifeblood of your business. But organizing
+      all of their information can be challenging.
+    </p>
+
+    <p class="text-justify">
+      With HubSpot's contact management tools, you have everything you need to
+      create, organize, and grow relationships with customers and leads. Create
+      up to 1,000,000 contact and company records, perform and log activities
+      such as emails and calls, and eliminate manual data entry with software
+      that updates your contacts automatically.
+    </p>
+  </div>
+
+  <div class="container input-group d-flex">
+    <input
+      (keyup)="search($event)"
+      class="form-control border border-dark"
+      type="text"
+    />
+
+    <button class="btn btn-primary" routerLink="/contactManager/addContact">
+      Add&nbsp;Contact
+    </button>
+  </div>
+
+  <!-- {{ heading }}
+  {{allContacts|json}} -->
+
+  <div
+    class="container d-flex justify-content-center align-items-center gap-3 flex-wrap h-75"
+  >
+    <div
+      class="border border-secondary"
+      *ngFor="let contact of allContacts | filter : searchKey : 'name'"
+      style="width: 16rem"
+    >
+      <img
+        class="img-fluid"
+        [src]="contact.photourl"
+        alt=""
+        srcset=""
+        style="width: 16rem"
+      />
+
+      <ol class="list-group list-group-numbered">
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Name</div>
+            {{ contact.name }}
+          </div>
+
+          <span class="badge bg-primary rounded-pill"
+            ><a class="btn" routerLink="/contactManager/view/{{ contact.id }}"
+              ><i class="fa-solid fa-eye"></i></a
+          ></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Phone&nbsp;Number</div>
+            {{ contact.phone }}
+          </div>
+          <span class="badge bg-primary rounded-pill"
+            ><a class="btn" routerLink="/contactManager/edit/{{ contact.id }}"
+              ><i class="fa-solid fa-pen"></i></a
+          ></span>
+        </li>
+        <li
+          class="list-group-item d-flex justify-content-between align-items-start"
+        >
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Email&nbsp;Id</div>
+            {{ contact.email }}
+          </div>
+          <span
+            (click)="deleteContact(contact.id)"
+            class="badge bg-primary rounded-pill"
+            ><a class="btn" routerLink=""><i class="fa-solid fa-trash"></i></a
+          ></span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>

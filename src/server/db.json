@@ -1,0 +1,98 @@
+{
+  "contacts": [
+    {
+      "groupid": "1",
+      "id": "2",
+      "name": "fdygvc",
+      "email": "31213213",
+      "phone": "ftyhjvgh",
+      "photourl": "123212",
+      "company": "233123211",
+      "title": "321213"
+    },
+    {
+      "groupid": "2",
+      "id": "3",
+      "name": "fdygvc",
+      "email": "31213213",
+      "phone": "ftyhjvgh",
+      "photourl": "123212",
+      "company": "233123211",
+      "title": "321213"
+    },
+    {
+      "groupid": "3",
+      "id": "4",
+      "name": "fdygvc",
+      "email": "31213213",
+      "phone": "ftyhjvgh",
+      "photourl": "123212",
+      "company": "233123211",
+      "title": "321213"
+    },
+    {
+      "groupid": "1",
+      "id": "1231",
+      "name": "2131231",
+      "phone": "233213",
+      "photourl": "123212",
+      "email": "31213213",
+      "company": "233123211",
+      "title": "321213"
+    },
+    {
+      "groupid": "1",
+      "id": "31",
+      "name": "321312",
+      "phone": "231321",
+      "photourl": "312",
+      "email": "312132132",
+      "company": "132321",
+      "title": "213132"
+    },
+    {
+      "groupid": "2",
+      "title": "231123",
+      "company": "123312",
+      "email": "132132",
+      "photourl": "12132312",
+      "phone": "312312",
+      "name": "312132312",
+      "id": "31212"
+    },
+    {
+      "groupid": "3",
+      "id": "21321123312",
+      "name": "1",
+      "phone": "3",
+      "photourl": "321",
+      "email": "213213",
+      "company": "132123",
+      "title": "213123"
+    },
+    {
+      "groupid": "3",
+      "id": "213",
+      "name": "hbijbhj",
+      "phone": "54356754",
+      "photourl": "312",
+      "email": "@hjhbjhh",
+      "company": "3131",
+      "title": "2"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Company"
+    },
+    {
+      "id": "2",
+      "name": "Family"
+    },
+    {
+      "id": "3",
+      "name": "Friends"
+    }
+  ]
+}
